@@ -3,11 +3,11 @@ import { AppBar, Toolbar, Typography, IconButton, Box, Badge } from '@mui/materi
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import HomeIcon from '@mui/icons-material/Home';
 import { useNavigate } from 'react-router-dom';
-import { useCart } from '../context/CartContext'; // Adjust the path according to your project structure
+import { useCart } from '../context/CartContext'; 
 
 function ShoppingAppBar() {
   const navigate = useNavigate();
-  const { cartItems } = useCart(); // Assuming useCart hook provides cart items
+  const { cartItems } = useCart(); 
 
   const handleCartClick = () => {
     navigate('/cart');
