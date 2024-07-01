@@ -19,17 +19,8 @@ const ProductList: React.FC = () => {
                 console.error('Error fetching products:', error);
                 setLoading(false); 
             });
-    }, []); useEffect(() => {
-        axios.get<Product[]>('https://fakestoreapi.com/products')
-            .then((response) => {
-                setProducts(response.data);
-                setLoading(false); 
-            })
-            .catch((error) => {
-                console.error('Error fetching products:', error);
-                setLoading(false); 
-            });
-    }, []);
+    }, []); 
+   
 
 
     if (loading) {
