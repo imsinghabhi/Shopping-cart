@@ -57,7 +57,7 @@ const CartPage: React.FC = () => {
 
             {cartItems.length > 0 && (
                 <Box sx={{ marginTop: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Typography variant="h5" gutterBottom>Total Price: ${total}</Typography>
+                    <Typography variant="h5" gutterBottom>Total Price: ${total.toFixed(2)}</Typography>
                     <Button variant="contained" color="primary" onClick={clearCart}>
                         Clear Cart
                     </Button>
